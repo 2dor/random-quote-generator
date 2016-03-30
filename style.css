@@ -1,0 +1,160 @@
+html, body {
+  height: 100%;
+  background-color: #2196F3; /* same colour as the first background, in case
+                                the resources don't load fast enough  */
+}
+
+.row {
+  height: 100%;
+}
+
+body {
+  -webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.footer {
+  color: #FFF;
+}
+
+.well {
+  font-family: 'Roboto', sans-serif;
+  background-color: inherit;
+  color: #FFF;
+  border: none;
+  border-top: 2px solid ;
+  font-weight: 700;
+  position:absolute;
+  left:10%; right:10%;
+  top:10%; bottom:10%;
+  margin:auto;
+}
+
+@media all and (max-width: 1920px) {
+  .btn {
+    font-size: 2em;
+    padding-left: 50px;
+    padding-right: 50px;
+    /*width: 40% !important;*/
+  }
+  #quoteText,
+  #quoteAuthor {
+    font-size: 1.7em;
+  }
+}
+
+@media all and (max-width: 1366px) { /* laptop */
+  .btn {
+    font-size: 1.8em;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*width: 50% !important;*/
+  }
+  #quoteText,
+  #quoteAuthor {
+    font-size: 1.4em;
+  }
+}
+
+@media all and (max-width: 768px) { /* tablet */
+  .btn {
+    font-size: 1.75em;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*width: 50% !important;*/
+  }
+  #quoteText,
+  #quoteAuthor {
+    font-size: 1.15em;
+  }
+}
+
+@media all and (max-width: 480px) { /* bg smartphone  */
+  .btn {
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*width: 70% !important;*/
+  }
+  #quoteText,
+  #quoteAuthor {
+    font-size: 0.9em;
+  }
+}
+
+@media all and (max-width: 320px) { /* sm smartphone  */
+  .btn {
+    font-size: 1em;
+    padding-left: 6px;
+    padding-right: 6px;
+    /*width: 70% !important;*/
+  }
+  #quoteText,
+  #quoteAuthor {
+    font-size: 0.8em;
+  }
+}
+
+#quote {
+  height: 70%;
+}
+
+#quoteText {
+  position:absolute;
+  left:10%; right:10%;
+  top:10%; bottom:20%;
+  margin:auto;
+}
+
+#quoteAuthor {
+  color: #B3E5FC;
+  position:absolute;
+  left:10%; right:10%;
+  top:80%; bottom:10%;
+  margin:auto;
+}
+
+#generateButton {
+  height: 24%;
+}
+
+.btn {
+  box-shadow: 0 6px #FFF;
+  color: #FFF;
+  background-color: #FF9800 !important;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: #FFF;
+  border: none;
+  box-shadow: 0 4px #FFF;
+  transform: translate(-50%, -50%) translateY(2px);
+}
+
+.btn:focus {
+  outline: none !important;
+  color: #FFF;
+}
+
+.btn:active {
+  outline: none !important;
+  color: #FFF !important;
+  transform: translate(-50%, -50%) translateY(6px);
+  box-shadow: none;
+}

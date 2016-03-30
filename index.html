@@ -1,0 +1,41 @@
+<head>
+  <title>Random Quotes Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <!-- Latest compiled JavaScript -->
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row text-center vertical-align">
+    <div id="quote" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="well">
+        <div id="quoteText">...loading...</div>
+        <div id="quoteAuthor"></div>
+      </div>
+    </div> <!-- col -->
+
+    <div id="generateButton" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <button type="button" class="btn btn-default btn-lg">Generate Quote</button>
+    </div> <!-- col -->
+
+    <footer class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="container">
+        <p class="text-right">Copyright <i class="fa fa-copyright"></i> <script>
+          var date = new Date();
+          var year = date.getFullYear();
+          document.write(year);
+          </script> Tudor Ciurca
+        </p>
+      </div>
+    </footer>
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+<script src="script.js"></script>
+</body>
